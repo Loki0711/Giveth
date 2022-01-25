@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19206" systemVersion="21A559" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Donation" representedClassName="Donation" syncable="YES" codeGenerationType="class">
+        <attribute name="cart" attributeType="Transformable" customClassName="[String:Int]"/>
+        <attribute name="duration" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="isActive" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="message" attributeType="String"/>
+        <attribute name="receiver" attributeType="String"/>
+        <attribute name="sender" attributeType="String"/>
+        <attribute name="timeOfCompletion" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="timeOfCreation" attributeType="Date" usesScalarValueType="NO"/>
+    </entity>
+    <entity name="Entity" representedClassName="Entity" syncable="YES" codeGenerationType="class">
+        <attribute name="activeDonations" optional="YES" attributeType="Transformable" customClassName="[Donation]"/>
+        <attribute name="address" optional="YES" attributeType="Transformable" customClassName="[String]"/>
+        <attribute name="connectionRequests" optional="YES" attributeType="Transformable" customClassName="[String]"/>
+        <attribute name="connections" optional="YES" attributeType="Transformable" customClassName="[String]"/>
+        <attribute name="deliveryPartnerInfo" optional="YES" attributeType="Transformable" customClassName="[String]"/>
+        <attribute name="desc" attributeType="String"/>
+        <attribute name="email" attributeType="String"/>
+        <attribute name="foodItems" optional="YES" attributeType="Transformable" customClassName="[String:Int]"/>
+        <attribute name="images" optional="YES" attributeType="Transformable" customClassName="[String]"/>
+        <attribute name="name" attributeType="String"/>
+        <attribute name="password" attributeType="String"/>
+        <attribute name="pastDonations" optional="YES" attributeType="Transformable" customClassName="[Donation]"/>
+        <attribute name="type" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="Donation" positionX="-63" positionY="54" width="128" height="149"/>
+        <element name="Entity" positionX="-63" positionY="-18" width="128" height="224"/>
+    </elements>
+</model>
